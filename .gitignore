@@ -1,0 +1,7 @@
+# ignore everything
+*
+./*
+
+# apart from vimrc
+!.vimrc
+!.gitignore
