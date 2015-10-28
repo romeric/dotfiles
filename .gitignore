@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ignore everything
 *
 ./*
@@ -5,3 +6,10 @@
 # apart from vimrc
 !.vimrc
 !.gitignore
+=======
+# backup files
+*~
+
+# vim swap files
+*.swp
+>>>>>>> c25e350a7f13bcd5dd4dccad2c270c53d8fe8795

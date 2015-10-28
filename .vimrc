@@ -14,6 +14,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+Plugin 'powerline/powerline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
@@ -27,6 +28,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'  
 Plugin 'tpope/vim-vinegar'
+Plugin 'lervag/vimtex'
 
 "Plugin 'SirVer/ultisnips'  
 "Plugin 'auto-pairs'
@@ -140,6 +142,13 @@ nnoremap mp :wa<CR>:exec '!clear;python ~/Dropbox/Florence/RunSession.py' shelle
 " nnoremap <buffer> mm :w<CR>:exec '!clear;python' shellescape(@%, 1)<CR>
 nnoremap <buffer> mm :w<CR>:exec '!clear;python' shellescape(@%, 1)<CR>
 "command R !./%
+
+
+" compile pdflatex
+nnoremap ml :wa<CR>:exec '!clear; pdflatex -synctex=1 -interaction=nonstopmode CompMech_2015.tex'<CR>
+" nnoremap ml :wa<CR>:exec '!clear; pdflatex CompMech_2015.tex'<CR>
+
+
 
 " source .vimrc
 nnoremap ,vi :w<CR>:source ~/.vimrc<CR>
