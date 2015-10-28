@@ -95,9 +95,8 @@ nnoremap df :%d<CR>
 
 " no plugin required
 "till the end of the line
-nnoremap ,rr Bhxi[<Esc>A]<Esc>a
-nnoremap ,tt Bhxi(<Esc>A)<Esc>a
-nnoremap ,rs Bhxi[<Esc>f<space>i]<Esc> 
+nnoremap ,rr F<Space>xi[<Esc>A]
+nnoremap ,tt F<Space>xi(<Esc>A)
 
 " insert new line using enter and ctrl-enter in normal mode
 nmap <S-Enter> O<Esc>
@@ -132,12 +131,13 @@ nnoremap ,ss :wq<CR>
 nnoremap ,sf :q!<CR>
 nnoremap ,sa :wqa<CR>
 nnoremap ,ns :q!<CR>
-nnoremap ,sm :wa<CR>:mksession!<CR>:qa<CR>
+nnoremap ,sm :wa<CR>:mksession! ~/Dropbox/Florence/Session.vim<CR>:qa<CR>
 
 " run python from within vim. Run RunSession.py
 "nnoremap <buffer> m :wa<CR>:exec '!clear;python ~/Dropbox/Florence/RunSession.py' shellescape(@%, 1)<CR>
 nnoremap mp :wa<CR>:exec '!clear;python ~/Dropbox/Florence/RunSession.py' shellescape(@%, 1)<CR>
 " run python on buffer
+" nnoremap <buffer> mm :w<CR>:exec '!clear;python' shellescape(@%, 1)<CR>
 nnoremap <buffer> mm :w<CR>:exec '!clear;python' shellescape(@%, 1)<CR>
 "command R !./%
 
